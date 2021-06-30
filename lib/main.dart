@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test2/count_bloc_2/counter_state.dart';
 
-import 'count_bloc/counter_bloc.dart';
+import 'count_bloc_2/counter_bloc.dart';
 import 'count_bloc_2/counter_event.dart';
 
 void main() => runApp(MyApp());
@@ -31,12 +31,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  CounterBloc _counterBloc;
+  CounterBolc _counterBloc;
 
   @override
   void initState() {
     super.initState();
-    _counterBloc = CounterBloc();
+    _counterBloc = CounterBolc();
   }
 
   @override
